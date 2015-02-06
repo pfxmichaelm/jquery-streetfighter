@@ -27,7 +27,11 @@ $(document).ready(function() {
 		//ryu goes back to his ready position
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
-	});
+	})
+	.keydown(function(e) {
+		if(e.which==88) 
+			console.log('keydown');		
+	})
 });
 
 function playHadouken () {

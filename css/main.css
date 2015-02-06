@@ -51,4 +51,21 @@ body {
 	background-image: url("../images/ryu-throwing-hadouken.png");
 }
 
+.copy {
+	font-family: sans-serif;
+	font-size: 20px;
+	/*max-width: 560px;*/
+	/*text-align: center;*/
+	color: red;
+	text-align: center;
+}
 
+.ryu-txt {
+	margin-top: 10px;
+	padding-left: 620px;	
+}
+
+.cool-txt {
+	margin-top: 15px;
+	padding-left: 900px;
+}
