@@ -35,12 +35,13 @@ $(document).keydown(function(k) {
 	if(k.which==88) {
 		console.log('keydown');
 		$('.ryu-ready').hide();
+		$('.ryu-still').hide();
 		$('.ryu-cool').show();
 	} 
 }).keyup(function(k) {
 	if(k.which==88) {
 		$('.ryu-cool').hide();
-		$('.ryu-ready').show();
+		$('.ryu-still').show();
 	}
 });
 
