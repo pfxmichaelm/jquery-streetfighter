@@ -31,13 +31,18 @@ $(document).ready(function() {
 
 });
 $(document).keydown(function(k) {
-	if(k.keyCode==88) {
+	if(k.which==88) {
 		console.log('keydown');
 		$('.ryu-ready').hide();
-		$('.ryu-throwing').hide();
 		$('.ryu-cool').show();
 	} 
-})
+}).keyup(function(k) {
+	if(k.which==88) {
+		$('.ryu-cool').hide();
+		$('.ryu-ready').show();
+	}
+});
+
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
   $('#hadouken-sound')[0].load();
