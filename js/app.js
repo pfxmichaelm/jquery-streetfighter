@@ -30,6 +30,7 @@ $(document).ready(function() {
 	})
 
 });
+
 $(document).keydown(function(k) {
 	if(k.which==88) {
 		console.log('keydown');
